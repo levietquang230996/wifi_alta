@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/scss/font-icons.css">
+    <link rel="stylesheet" href="../assets/scss/index.css">
+
+    <title>Login Wifi</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <div class="box row no-gutters m-auto align-items-center">
+        <section name="form" class="col-12 col-xl-5 d-flex justify-content-center align-items-center">
+            <div class="">
+                <p class="HelveticaNeu_Light1 m-0">PUBLIC</p>
+                <p class="HelveticaNeu_Bold1 font-weight-bold m-0">
+                    <span class="txt_wifi mr-2">WiFi</span>ZONE
+                </p>
+                <form action="Login" class="mt-xl-5 mt-3">
+                    <!-- user name -->
+                    <div class="position-relative mt-4 mb-1">
+                        <input class="effect-16  w-100" type="text" placeholder="User Name">
+                        <!-- <label>User Name</label> -->
+                        <span class="focus-border"></span>
+                        <span class="icon-user position-absolute">
+                            <span class="path1"></span>
+                            <!-- <span class="path2"></span> -->
+                        </span>
+                    </div>
+                    <!-- password -->
+                    <div class="position-relative mt-4">
+                        <input class="effect-16 password w-100" type="password" placeholder="••••••••">
+                        <!-- <label>••••••••</label> -->
+                        <!-- <label>password</label> -->
+                        <span class="focus-border"></span>
+                        <span class="icon-password position-absolute">
+                            <span class="path1"></span>
+                            <!-- <span class="path2"></span> -->
+                        </span>
+                    </div>
+                    <!-- 2 btn -->
+                    <div class="d-flex flex-wrap my-xl-5 my-2">
+                        <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
+                            <button type="button" class="btn w-100 btn_wifi text-white rounded-0 py-1 cursor_pointer"
+                                id="btn_join">Join</button>
+                        </div>
+                        <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
+                            <button type="button" class="btn w-100 btn_guest text-white rounded-0 py-1 cursor_pointer"
+                                id="btn_guest">GUEST</button>
+                        </div>
+                    </div>
+                    <!-- face id -->
+                    <div class="w-100">
+                        <div class="w-100 text-center">
+                            <img src="../assets/images/face_id.png" class=" btn_camera cursor_pointer" alt="Face">
+                        </div>
+                        <p class="text-center txt_color m-0 btn_camera cursor_pointer">Use Face ID to login </p>
+                    </div>
+            </div>
+
+            </form>
+        </section>
+        <section name="image" class="col-12 col-xl-7 d-flex justify-content-center align-items-center ">
+            <div class="text-center">
+                <img src="../assets/images/bg_wifi_AT.png" alt="BG wifi">
+                <p class="mb-0 w-100 mt-xl-5 mt-2 txt_color">©2019. AltaMedia Insight Version 1.0 - All rights reserved.
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="../assets/plugins/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/plugins/jquery/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script>
+        // origin: "http://127.0.0.1:5500"
+        // pathname: "/pages/takephoto.html"
+        // console.log(window.location)
+        $('#btn_guest').on('click', function () {
+            window.location.href = window.location.origin + '/pages/register.html';
+        })
+        $('.btn_camera').on('click', function () {
+            alert(1)
+            window.location.href = window.location.origin + '/pages/takephoto.html';
+        })
+    </script>
+</body>
+
+</html>

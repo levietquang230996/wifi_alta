@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/scss/font-icons.css">
+    <link rel="stylesheet" href="../assets/scss/takephoto.css">
+
+    <title>Register Wifi</title>
+</head>
+
+<body class="d-flex justify-content-center align-items-center">
+    <div class="box row no-gutters m-auto align-items-center">
+        <section name="form" class="col-12 col-xl-5 d-flex justify-content-center align-items-center">
+            <div class="rounded-circle bg-dark position-relative">
+                <div class="w-100 h-100 position-absolute img_border">
+                </div>
+                <video class="w-100 h-100" poster="../assets/images/bg_nocamera.png" id="video_camera" autoplay="true">
+                </video>
+                <canvas class="position-absolute abc w-100 h-100" id="canvas"></canvas>
+            </div>
+            <div class="small_btn position-absolute bg-white text-center p-3 p-xl-4 rounded-circle">
+                <span class="icon-camera cursor_pointer" id="btn_camera">
+                    <span class="path1"></span><span class="path2"></span>
+                </span>
+                <span class="icon-checked cursor_pointer d-none" id="btn_check"><span class="path1"></span><span
+                        class="path2"></span></span>
+            </div>
+        </section>
+        <section name="image" class="col-12 col-xl-7 w-100 d-flex justify-content-center align-items-center">
+            <div class="text-center">
+                <img src="../assets/images/bg_wifi_AT.png" alt="BG wifi">
+                <p class="mb-0 w-100 mt-xl-5 mt-2 txt_color">©2019. AltaMedia Insight Version 1.0 - All rights reserved.
+                </p>
+            </div>
+        </section>
+    </div>
+    <script src="../assets/plugins/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/plugins/jquery/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/GetCamera.js"></script>
+</body>
+
+</html>

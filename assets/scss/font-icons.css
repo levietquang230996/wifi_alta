@@ -1,0 +1,168 @@
+@font-face {
+  font-family: 'HelveticaNeu_Bold';
+  src: url('../fonts/HelveticaNeuBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'HelveticaNeu_Light';
+  src: url('../fonts/HelveticaNeueLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.HelveticaNeu_Bold {
+  font-family: 'HelveticaNeu_Bold';
+}
+
+
+.HelveticaNeu_Light {
+  font-family: 'HelveticaNeu_Light';
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icons/icomoon.eot?2xgdmv');
+  src: url('../fonts/icons/icomoon.eot?2xgdmv#iefix') format('embedded-opentype'),
+    url('../fonts/icons/icomoon.ttf?2xgdmv') format('truetype'),
+    url('../fonts/icons/icomoon.woff?2xgdmv') format('woff'),
+    url('../fonts/icons/icomoon.svg?2xgdmv#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-camera .path1:before {
+  content: "\e900";
+  color: rgb(148, 148, 148);
+}
+
+.icon-camera .path2:before {
+  content: "\e901";
+  margin-left: -1.302734375em;
+  color: rgb(152, 148, 148);
+}
+
+.icon-camera_circle:before {
+  content: "\e902";
+}
+
+.icon-checked .path1:before {
+  content: "\e903";
+  color: rgb(148, 148, 148);
+}
+
+.icon-checked .path2:before {
+  content: "\e904";
+  margin-left: -1.02734375em;
+  color: rgb(152, 148, 148);
+}
+
+.icon-gender:before {
+  content: "\e905";
+}
+
+.icon-password .path1:before {
+  content: "\e906";
+  color: rgb(148, 148, 148);
+}
+
+.icon-password .path2:before {
+  content: "\e907";
+  margin-left: -1.0126953125em;
+  color: rgb(152, 148, 148);
+}
+
+.icon-phone:before {
+  content: "\e908";
+}
+
+.icon-user .path1:before {
+  content: "\e909";
+  color: rgb(148, 148, 148);
+}
+
+.icon-user .path2:before {
+  content: "\e90a";
+  margin-left: -1.0126953125em;
+  color: rgb(152, 148, 148);
+}
+
+
+:focus {
+  outline: none;
+}
+
+.effect-16,
+.effect-17 {
+  border: 0;
+  padding: 4px 0;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+}
+
+.effect-16~.focus-border,
+.effect-17~.focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fd7506;
+  transition: 0.4s;
+}
+
+.effect-16:focus~.focus-border,
+.has-content.effect-16~.focus-border,
+.effect-17:focus~.focus-border,
+.has-content.effect-17~.focus-border {
+  width: 100%;
+  transition: 0.4s;
+}
+
+.effect-16~label,
+.effect-17~label {
+  position: absolute;
+  left: 0;
+  padding-left: 65px;
+  width: 100%;
+  top: 9px;
+  color: #aaa;
+  transition: 0.3s;
+  z-index: -1;
+  letter-spacing: 0.5px;
+}
+
+.effect-17~label {
+  top: 4px;
+}
+
+.effect-17~label {
+  padding-left: 60px;
+}
+/* 
+.effect-16:visited~label,
+.effect-17:visited~label {
+  content: 'ahihihi';
+  top: -20px;
+  padding-left: 0px;
+  font-size: 12px;
+  color: #fd7506;
+  transition: 0.3s;
+} */
+

@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../assets/plugins/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/scss/font-icons.css">
+    <link rel="stylesheet" href="../assets/plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../assets/scss/register.css">
+
+    <title>Take Photo</title>
+</head>
+
+<body class="row no-gutters">
+
+    <div class="bg_opp justify-content-center align-items-center d-none">
+        <div class="modal_box bg-white text-center py-4 px-5 position-relative">
+            <i class="fas fa-times position-absolute"></i>
+            <img src="../assets//images/text_opp.png" alt="Opps">
+            <p class="HelveticaNeu_Light m-0">Vui lòng nhập đầy đủ thông tin để hoàn thiện bước đăng ký.</p>
+        </div>
+    </div>
+
+    <section name="form" class="col-12 col-xl-5">
+        <div class=" h-100 w-100">
+            <p class="HelveticaNeu_Light1 m-0 text-center">REGISTER</p>
+            <form action="Login" class="mt-xl-5 mt-3">
+                <!-- user name -->
+                <div class="position-relative mt-xl-5 mt-3 mb-1">
+                    <input class="effect-17 w-100" type="text" placeholder="User Name">
+                    <!-- <label>User Name</label> -->
+                    <span class="focus-border"></span>
+                    <span class="icon-user position-absolute">
+                        <span class="path1"></span>
+                    </span>
+                </div>
+                <!-- gender & phone -->
+                <div class="mb-1 row no-gutters mt-xl-5 mt-3">
+                    <div class="position-relative col-6 px-1">
+                        <select name="select" class="form-control select_gender h-100 rounded-0 bg-white">
+                            <option value="1">Male</option>
+                            <option value="2">FeMale</option>
+                        </select>
+                        <span class="position-absolute rounded-circle d-flex align-item-end icon_gender"><i
+                                class="fas fa-restroom"></i></span>
+                        <!-- <span class="icon-gender position-absolute bg_icons text-white"></span> -->
+                    </div>
+
+                    <div class="col-6 position-relative px-1">
+                        <input class="effect-17 phone h-100 w-100" placeholder="Phone number" type="text">
+                        <!-- <label>Phone number</label> -->
+                        <span class="focus-border"></span>
+                        <!-- <span class="icon-user position-absolute">
+                                <span class="path1"></span>
+                            </span> -->
+                        <span class="position-absolute rounded-circle d-flex align-item-end icon_phone">
+                            <i class="fas fa-mobile-alt"></i>
+                        </span>
+                    </div>
+                </div>
+                <!-- password -->
+                <div class="position-relative mt-xl-5 mt-3">
+                    <input class="effect-17 password w-100" type="password" placeholder="••••••••">
+                    <!-- <label>••••••••</label> -->
+                    <!-- <label>Password</label> -->
+                    <span class="focus-border"></span>
+                    <span class="icon-password position-absolute">
+                        <span class="path1"></span>
+                        <!-- <span class="path2"></span> -->
+                    </span>
+                </div>
+                <!-- face id -->
+                <div class="w-100">
+                    <div class="w-100 text-center">
+                        <span class="rounded-circle icon_camera mt-2 go_to_camera cursor_pointer">
+                            <i class="fas fa-camera"></i>
+                        </span>
+                    </div>
+                    <p class="text-center txt_color m-0 go_to_camera cursor_pointer">Click to take your photo</p>
+                </div>
+                <!-- 2 btn -->
+                <div class="d-flex flex-wrap my-xl-5 my-2">
+                    <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
+                        <button type="button" class="btn w-100 btn-white text-gray rounded-0 py-1 btn_shadow"
+                            id="btn_back">BACK</button>
+                    </div>
+                    <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
+                        <button type="button" class="btn w-100 btn_wifi text-white rounded-0 py-1 btn_shadow"
+                            id="btn_done">DONE</button>
+                    </div>
+                </div>
+        </div>
+
+        </form>
+    </section>
+    <section name="image" class="col-12 col-xl-7 w-100 d-flex flex-wrap ">
+        <div class="w-100 text-center">
+            <img src="../assets/images/bg_wifi_AT.png" alt="BG wifi" class="">
+            <p class="mb-0 w-100 mt-xl-5 mt-2 txt_color">©2019. AltaMedia Insight Version 1.0 - All rights reserved.</p>
+        </div>
+    </section>
+
+    <script src="../assets/plugins/jquery/jquery-3.3.1.slim.min.js"></script>
+    <script src="../assets/plugins/jquery/popper.min.js"></script>
+    <script src="../assets/plugins/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/js/GetCamera.js"></script>
+</body>
+
+</html>
