@@ -45,7 +45,8 @@ $("#btn_check").on("click", function () {
             fd.append('image', blob, 'filename')
            console.log(fd.get('image'))
             console.log(blob)
-            window.location.href = window.location.origin + '/pages/register.html';
+            window.history.back();
+            // window.location.href = window.location.origin + '/pages/register.html';
             // Upload
             // fetch('upload', {method: 'POST', body: fd})
         })
@@ -54,7 +55,7 @@ $("#btn_check").on("click", function () {
 
 // tro ve trang index
 $('#btn_back').on('click', function () {
-    window.location.href = window.location.origin + '/pages/index.html';
+    // window.location.href = window.location.origin + '/pages/index.html';
 })
 
 // dang ky nguoi dung
@@ -64,7 +65,7 @@ $('#btn_done').on('click', function () {
 
 // chuyen sang trang camera
 $('.go_to_camera').on('click', function () {
-    window.location.href = window.location.origin + '/pages/takephoto.html';
+    // window.location.href = window.location.origin + '/pages/takephoto.html';
     init();
 })
 

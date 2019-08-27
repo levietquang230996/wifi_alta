@@ -47,20 +47,20 @@
                     <!-- 2 btn -->
                     <div class="d-flex flex-wrap my-xl-5 my-2">
                         <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
-                            <button type="button" class="btn w-100 btn_wifi text-white rounded-0 py-1 cursor_pointer"
-                                id="btn_join">Join</button>
+                            <a href="index.html" class="btn w-100 btn_wifi text-white rounded-0 py-1 cursor_pointer"
+                                id="btn_join">Join</a>
                         </div>
                         <div class="col-12 col-xl-6 px-xl-1 px-0 my-xl-2 my-1">
-                            <button type="button" class="btn w-100 btn_guest text-white rounded-0 py-1 cursor_pointer"
-                                id="btn_guest">GUEST</button>
+                            <a href="register.html" class="btn w-100 btn_guest text-white rounded-0 py-1 cursor_pointer"
+                                id="btn_guest">GUEST</a>
                         </div>
                     </div>
                     <!-- face id -->
-                    <div class="w-100">
+                    <div class="w-100 text-center">
                         <div class="w-100 text-center">
-                            <img src="../assets/images/face_id.png" class=" btn_camera cursor_pointer" alt="Face">
+                            <a href="takephoto.html"><img src="../assets/images/face_id.png" class=" btn_camera cursor_pointer" alt="Face"></a>
                         </div>
-                        <p class="text-center txt_color m-0 btn_camera cursor_pointer">Use Face ID to login </p>
+                        <a href="takephoto.html" class=" txt_color m-0 btn_camera cursor_pointer">Use Face ID to login </a>
                     </div>
             </div>
 
@@ -81,13 +81,13 @@
         // origin: "http://127.0.0.1:5500"
         // pathname: "/pages/takephoto.html"
         // console.log(window.location)
-        $('#btn_guest').on('click', function () {
-            window.location.href = window.location.origin + '/pages/register.html';
-        })
-        $('.btn_camera').on('click', function () {
-            alert(1)
-            window.location.href = window.location.origin + '/pages/takephoto.html';
-        })
+        // $('#btn_guest').on('click', function () {
+        //     window.location.href = window.location.origin + '/pages/register.html';
+        // })
+        // $('.btn_camera').on('click', function () {
+        //     alert(1)
+        //     window.location.href = window.location.origin + '/pages/takephoto.html';
+        // })
     </script>
 </body>
 
